@@ -13,3 +13,19 @@ Mg magnesium 12 24.304
 Al aluminum 13 26.9815384
 Si silicon 14 28.084
 P phosphorus 15 30.973762
+S sulfur 16 32.059
+Cl chlorine 17 35.446
+Ar argon 18 39.792
+K potassium 19 39.0983
+Ca calcium 20 40.078
+Sc scandium 44.955908
+Ti titanium 22 47.867
+V vanadium 23 50.9415
+Cr chromium 24 51.9961
+Mn manganese 25 54.938043
+Fe iron 26 55.845
+Co cobalt 27 58.933194
+Ni nickel 28 58.6934
+Cu copper 29 63.546
+Zn zinc 30 65.38
+Ga gallium 31 69.723
