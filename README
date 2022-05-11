@@ -1,0 +1,13 @@
+Chem 1A Calculators
+Luciano Loma Lorenzana
+Develop - 05/11/2022
+
+Calcualtors that are meant to help in the micro calcualtions assiciated with chemistry, along with
+a dictionary of the periodic table to ease in clacualtions and quickly look up elements.
+The calcualtors assiociated will deal with calculating molar mass, determining limiting reactants,
+and perhaps some stoichiometry and equilibriums.
+
+Development Notes
+05/11/2022
+Started working on the dictionary for the periodic table to allow for accessible reach of elements
+and their data.
