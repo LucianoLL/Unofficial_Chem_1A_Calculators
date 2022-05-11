@@ -10,3 +10,6 @@ F fluorine 9 18.99840316
 Ne neon 10 20.1797
 Na sodium 11 22.98976928
 Mg magnesium 12 24.304
+Al aluminum 13 26.9815384
+Si silicon 14 28.084
+P phosphorus 15 30.973762
