@@ -29,6 +29,20 @@ PeriodicTable :: PeriodicTable() {
 
 }
 
+PeriodicTable :: ~PeriodicTable() {
+    moveFront();
+    while(currPos < numElements) {
+        periodElement* tmpElement = afterCursor->next;
+        delete afterCursor;
+        afterCursor = tmpElement;
+        afterCursor->prev = beforeCursor;
+        beforeCursor->next = tmpElement;
+        numElements--;
+    }
+    delete frontDummy;
+    delete backDummy;
+}
+
 void PeriodicTable :: insertElement(std::string x, std::string y, int z, float f) {
     periodElement* tmp = new periodElement(x, y, z, f);  //  creating a new element to insert into the table list
     
@@ -72,15 +86,28 @@ void PeriodicTable :: moveBack() {
     currPos = numElements - 1;
 }
 
+void PeriodicTable :: moveNext() {
+    beforeCursor = afterCursor;
+    afterCursor = afterCursor->next;
+    currPos++;
+}
+
+void PeriodicTable :: movePrev() {
+    afterCursor = beforeCursor;
+    beforeCursor = beforeCursor->prev;
+    currPos--;
+}
+
 std::string PeriodicTable :: findElement(std::string x) {
     moveFront();
     while (afterCursor != backDummy) {
         if (afterCursor->elementName == x) {
-            return (afterCursor->elementName);
+            return (nameOf());
         } else if (afterCursor->elementSymbol == x) {
-            return (afterCursor->elementSymbol);
+            return (symbol());
         }
         moveNext();
     }
+    return ("Bill Nye");
 
 }
