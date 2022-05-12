@@ -29,6 +29,21 @@ PeriodicTable :: PeriodicTable() {
 
 }
 
-void :: insertElement(std::string x, std::string y, int z, float f) {
+void :: PeriodicTable :: insertElement(std::string x, std::string y, int z, float f) {
+    periodElement* tmp = new periodElement(x, y, z, f);  //  creating a new element to insert into the table list
+    
+    beforeCursor->next = tmp;
+    tmp->prev = beforeCursor;
+    tmp->next = afterCursor;
+    afterCursor->prev = tmp;
+    afterCursor = tmp;
+    numElements++;
+}
 
+int :: PeriodicTable :: length() const {
+    return (numElements);
+}
+
+std::string PeriodicTable :: symbol() const {
+    return (elementSymbol);
 }
