@@ -1,6 +1,6 @@
 /* Periodic Table dicitonary header file
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022
+ * Develop: 05/11/2022 - 05/11/2022
  */
 
 #include <iostream>
@@ -9,7 +9,7 @@
 #ifndef PERIODIC_TABLE_H_
 #define PERIODIC_TABLE_H_
 
-class PeriodiceTable {
+class PeriodicTable {
     private:
     /*** The struct that'll hold the elements***/
     struct periodElement {
@@ -18,7 +18,7 @@ class PeriodiceTable {
         int atomicNumber;
         float atomicMass;
         periodElement* next;
-        periodElement* back;
+        periodElement* prev;
 
         periodElement(std::string x, std::string y, int z, float f);
     };
@@ -33,10 +33,13 @@ class PeriodiceTable {
 
     public:
     /*** Constructing the table ***/
-    PeriodiceTable();
+    PeriodicTable();
 
     /*** Deconstructs the table ***/
-    ~PeriodiceTable();
+    ~PeriodicTable();
+
+    /*** Insertion Functions ***/
+    void insertElement(std::string x, std::string y, int z, float f);  //  to insert any new periodic elements
 
     /*** Access functions for the periodic table ***/
     int length() const;  //  for iteration purposes
