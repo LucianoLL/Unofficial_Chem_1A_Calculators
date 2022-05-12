@@ -61,5 +61,7 @@ class PeriodicTable {
 
     void movePrev();  //  moves the cursor to the previous elements
 
+    std::string findElement(std::string x);  //  to find the element that the user is looking for
+
 };
 #endif

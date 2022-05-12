@@ -29,21 +29,58 @@ PeriodicTable :: PeriodicTable() {
 
 }
 
-void :: PeriodicTable :: insertElement(std::string x, std::string y, int z, float f) {
+void PeriodicTable :: insertElement(std::string x, std::string y, int z, float f) {
     periodElement* tmp = new periodElement(x, y, z, f);  //  creating a new element to insert into the table list
     
     beforeCursor->next = tmp;
     tmp->prev = beforeCursor;
     tmp->next = afterCursor;
-    afterCursor->prev = tmp;
+    afterCursor->prev = tmp;  //  all elements will be taken from the this cursor
     afterCursor = tmp;
     numElements++;
 }
 
-int :: PeriodicTable :: length() const {
+int PeriodicTable :: length() const {
     return (numElements);
 }
 
 std::string PeriodicTable :: symbol() const {
-    return (elementSymbol);
+    return (afterCursor->elementSymbol);
+}
+
+std::string PeriodicTable :: nameOf() const {
+    return (afterCursor->elementName);
+}
+
+int PeriodicTable :: elementPos() const {
+    return (afterCursor->atomicNumber);
+}
+
+int PeriodicTable :: elmentWeight () const {
+    return (afterCursor->atomicMass);
+}
+
+void PeriodicTable :: moveFront() {
+    beforeCursor = frontDummy;
+    afterCursor = frontDummy->next;
+    currPos = 0;
+}
+
+void PeriodicTable :: moveBack() {
+    afterCursor = backDummy;
+    beforeCursor = backDummy->prev;
+    currPos = numElements - 1;
+}
+
+std::string PeriodicTable :: findElement(std::string x) {
+    moveFront();
+    while (afterCursor != backDummy) {
+        if (afterCursor->elementName == x) {
+            return (afterCursor->elementName);
+        } else if (afterCursor->elementSymbol == x) {
+            return (afterCursor->elementSymbol);
+        }
+        moveNext();
+    }
+
 }
