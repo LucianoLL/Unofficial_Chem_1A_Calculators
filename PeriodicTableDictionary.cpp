@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include "PeriodicTableDicitonary.h"
+#include "PeriodicTableDictionary.h"
 
 PeriodicTable :: periodElement :: periodElement(std::string x, std::string y, int z, float f) {
     elementSymbol = "";
