@@ -51,7 +51,7 @@ class PeriodicTable {
 
     int elementPos() const;  //  returns the current elements atomic number
 
-    long elmentWeight() const;  //  returns the elements atomic weight
+    float elmentWeight() const;  //  returns the elements atomic weight
 
     /*** Traversal Functions ***/
     void moveFront();  //  moves the cursor to the front of the table
