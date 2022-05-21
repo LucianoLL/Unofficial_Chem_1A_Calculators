@@ -1,6 +1,6 @@
 Chem 1A Calculators
 Luciano Loma Lorenzana
-Develop: 05/11/2022 - 05/11/2022
+Develop: 05/11/2022 - 05/20/2022
 
 Summary:
 Calcualtors that are meant to help in the micro calcualtions assiciated with chemistry, along with
@@ -16,6 +16,10 @@ Type:
 ".\a.exe"
 
 Development Notes:
+05/20/2022
+Started to work on the makefile to allow for the user to easily compile the entire program.
+I'm still inexpereienced when writing makefiles, but I'm sure I can up with something, we'll see.
+
 05/15/2022
 Worked on a program that could be useful for when the quadratic formula is necessary for certain
 calculations. Designed to currently run on the terminal, and it's really basic. All inputs have to

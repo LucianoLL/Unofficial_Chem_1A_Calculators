@@ -11,3 +11,5 @@ MolarMass : MolarMass.o PeriodicTableDicitonary.o
 
 MolarMass.o : MolarMass.cpp
 	$(CPP) $(CPPFLAGS) -c MolarMass.cpp
+
+PeriodicTableDicitonary.o : 
