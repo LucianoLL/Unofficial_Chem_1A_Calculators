@@ -66,7 +66,7 @@ int main() {
             }
             std::cout << "Try another element? : Yes or No\n";
             std::cin >> userInput;
-            if (userInput != "Yes" || userInput == "exit") {
+            if (userInput != "Yes" || userInput != "yes" || userInput != "y" || userInput == "exit") {
                 std::cout << "\nOk, bye then";
                 userAgree = false;
             }
