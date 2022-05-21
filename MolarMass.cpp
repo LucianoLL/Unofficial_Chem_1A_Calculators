@@ -34,7 +34,6 @@ std::vector<std::string> splitCompound(std::string clientComp) {
                 bufferStr += clientComp[i];
                 i++;
             }
-            i++;
             bufferStr += clientComp[i];
             if (isdigit(clientComp[i + 1])) {
                 i++;
