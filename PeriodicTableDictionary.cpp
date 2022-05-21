@@ -112,7 +112,7 @@ std::string PeriodicTable :: findElement(std::string x) {
     moveFront();
 
     while (afterCursor != backDummy) {
-        if (lowerCasing(afterCursor->elementName) == lowerCasing(x)) {
+        if (afterCursor->elementName == x) {
             return (nameOf());
         } else if (lowerCasing(afterCursor->elementSymbol) == lowerCasing(x)) {
             return (symbol());

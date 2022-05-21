@@ -67,6 +67,7 @@ int main() {
             std::cout << "\nTry another element? : Yes or No\n";
             std::cin >> userInput;
             if (userInput == "Yes" || userInput == "yes" || userInput == "y") {
+                std::cout << "\n";
                 userAgree = true;
             } else {
                 std::cout << "\nOk, bye then\n";
