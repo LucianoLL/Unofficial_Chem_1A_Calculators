@@ -8,9 +8,9 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "PeriodicTableDicitonary.h"
+#include "PeriodicTableDictionary.h"
 
-int main(int argc, char* argv[]) {
+int main() {
     PeriodicTable ElementsTable;
     std::ifstream inFile;
     inFile.open("PeriodicTable.txt");

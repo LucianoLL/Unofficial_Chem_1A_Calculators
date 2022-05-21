@@ -37,4 +37,9 @@ int main () {
         std::cout << "\n";
         compoundList.push_back(currCompound);  //  adding them into the vector
     }
+
+    int listSize = compoundList.size();
+    for (int i = 0; i < listSize; i++) {
+        
+    }
 }
