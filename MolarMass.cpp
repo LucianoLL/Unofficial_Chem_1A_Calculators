@@ -17,6 +17,7 @@ std::vector<std::string> splitCompound(std::string clientComp) {
     std::string bufferStr = "";
 
     for (int i = 0; i < stirngLen; i++) {
+        bufferStr = "";
         if (std::isupper(clientComp[i])) {
             bufferStr = clientComp[i];
             if (std::islower(clientComp[i + 1])) {
