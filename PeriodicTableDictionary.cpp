@@ -80,7 +80,7 @@ int PeriodicTable :: elementPos() const {
     return (afterCursor->atomicNumber);
 }
 
-int PeriodicTable :: elmentWeight () const {
+float PeriodicTable :: elmentWeight () const {
     return (afterCursor->atomicMass);
 }
 
