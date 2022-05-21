@@ -24,7 +24,7 @@ int main() {
         std::string tmpSymbol = "";  //  place holder name for element symbol
         std::string tmpName = "";  //  place holder for the element name
         int tmpNumber = 0;  //  place holder for the atomic number
-        int tmpMass = 0;  //  place holder for it's mass
+        float tmpMass = 0;  //  place holder for it's mass
         /* 
          * got the idea for the parsing through this site:
          * https://reactgo.com/iterate-over-words-cpp/
