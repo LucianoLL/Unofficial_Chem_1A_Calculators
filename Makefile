@@ -1,8 +1,8 @@
 CPP = g++
 CPPFLAGS = -Wall -Wextra -pedantic -std=c++17 -Ofast
 
-MolarMassClient : MolarMassClient.o MolarMass.o PeriodicTableDicitonary.o
-		$(CPP) $(CPPFLAGS) -o MolarMassClient MolarMassClient.o MolarMass.o PeriodicTableDicitonary.o
+MolarMassClient : MolarMassClient.o MolarMass.o PeriodicTableDictionary.o
+		$(CPP) $(CPPFLAGS) -o MolarMassClient MolarMassClient.o MolarMass.o PeriodicTableDictionary.o
 
 MolarMassClient.o : MolarMassClient.cpp MolarMass.cpp MolarMass.h
 		$(CPP) $(CPPFLAGS) -c MolarMassClient.cpp 
@@ -10,8 +10,8 @@ MolarMassClient.o : MolarMassClient.cpp MolarMass.cpp MolarMass.h
 MolarMass.o : MolarMass.cpp MolarMass.h
 		$(CPP) $(CPPFLAGS) -c MolarMass.cpp
 
-PeriodicTableDicitonary.o :  PeriodicTableDicitonary.cpp PeriodicTableDicitonary.h
-		$(CPP) $(CPPFLAGS) -c PeriodicTableDicitonary.cpp
+PeriodicTableDictionary.o :  PeriodicTableDictionary.cpp PeriodicTableDictionary.h
+		$(CPP) $(CPPFLAGS) -c PeriodicTableDictionary.cpp
 
 clean :
-		rm -f MolarMassClient MolarMassClient.o MolarMass.o PeriodicTableDicitonary.o
+		rm -f MolarMassClient MolarMassClient.o MolarMass.o PeriodicTableDictionary.o

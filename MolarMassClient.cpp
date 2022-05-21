@@ -8,7 +8,7 @@
 #include <vector>
 #include "MolarMass.h"
 
-int main (int argc, char *argv[]) {
+int main (char *argv[]) {
     int compoundAmounts;  //  what will eventually become a digit
     std::string failSafe;  //  passing argument as a string as a fail safe
     std::cout << "Please type in the number of compounds you want calculated : " << "\n";
