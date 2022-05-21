@@ -79,6 +79,6 @@ int main () {
 
     int listSize = compoundList.size();
     for (int i = 0; i < listSize; i++) {
-        splitCompound(compoundList[i]);
+        std::cout << compoundList[i] << "\n";
     }
 }
