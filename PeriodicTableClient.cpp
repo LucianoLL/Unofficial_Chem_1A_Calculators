@@ -15,16 +15,16 @@ int main() {
     std::ifstream inFile;
     inFile.open("PeriodicTable.txt");
 
-    std::string currLine = "";
-    ElementsTable.moveFront();
-    while (std::getline(inFile, currLine)) {
-        std::stringstream toStream(currLine);
-        std::string strBuffer = "";
+    std::string currLine = "";  //  to grab the current line that we're on in the text file
+    ElementsTable.moveFront();  //  moving to the front of our table
+    while (std::getline(inFile, currLine)) {  //  to iterate through our text document
+        std::stringstream toStream(currLine);  //  to parse/tokenize our string
+        std::string strBuffer = "";  //  to hold the current element in the string
         
-        std::string tmpSymbol = "";
-        std::string tmpName = "";
-        int tmpNumber = 0;
-        int tmpMass = 0;
+        std::string tmpSymbol = "";  //  place holder name for element symbol
+        std::string tmpName = "";  //  place holder for the element name
+        int tmpNumber = 0;  //  place holder for the atomic number
+        int tmpMass = 0;  //  place holder for it's mass
         /* 
          * got the idea for the parsing through this site:
          * https://reactgo.com/iterate-over-words-cpp/
@@ -40,7 +40,7 @@ int main() {
                 tmpMass = std::stof(strBuffer);
             }
         }
-        ElementsTable.insertElement(tmpSymbol, tmpName, tmpNumber, tmpMass);
+        ElementsTable.insertElement(tmpSymbol, tmpName, tmpNumber, tmpMass);  //  inseritng our new element into our database
     }
 
     bool userAgree = true;
@@ -64,7 +64,7 @@ int main() {
                 << "Atomic Mass : " << ElementsTable.elmentWeight() << "\n";
 
             }
-            std::cout << "Try another element? : Yes or No\n";
+            std::cout << "\nTry another element? : Yes or No\n";
             std::cin >> userInput;
             if (userInput == "Yes" || userInput == "yes" || userInput == "y") {
                 userAgree = true;
