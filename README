@@ -9,23 +9,14 @@ The calcualtors assiociated will deal with calculating molar mass, determining l
 and perhaps some stoichiometry and equilibriums.
 
 Instructions:
+To run PeriodicTableClient
+Type:
+"make ./PeriodicTableClient"
+"PeriodicTableClient"
+Follow in-program instructions
+
 To run QuadraticFormula.cpp
 Type:
 "cd .\relevent_formula_calculators\"
 "g++ QuadraticFormula.cpp"
 ".\a.exe"
-
-Development Notes:
-05/20/2022
-Started to work on the makefile to allow for the user to easily compile the entire program.
-I'm still inexpereienced when writing makefiles, but I'm sure I can up with something, we'll see.
-
-05/15/2022
-Worked on a program that could be useful for when the quadratic formula is necessary for certain
-calculations. Designed to currently run on the terminal, and it's really basic. All inputs have to
-be numerical, input cannot have any symbols besides for "-". Will work on later on to accept other case
-as fractions and scientific notation.
-
-05/11/2022
-Started working on the dictionary for the periodic table to allow for accessible reach of elements
-and their data.

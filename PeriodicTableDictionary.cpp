@@ -43,6 +43,16 @@ PeriodicTable :: ~PeriodicTable() {
     delete backDummy;
 }
 
+std::string lowerCasing(std::string s) {
+    std::string toReturn = "";
+    int stringLen = s.length();
+    for (int i = 0; i < stringLen; i++) {
+        toReturn += std::tolower(s[i]);
+    }
+
+    return (toReturn);
+}
+
 void PeriodicTable :: insertElement(std::string x, std::string y, int z, float f) {
     periodElement* tmp = new periodElement(x, y, z, f);  //  creating a new element to insert into the table list
     
@@ -99,7 +109,9 @@ void PeriodicTable :: movePrev() {
 }
 
 std::string PeriodicTable :: findElement(std::string x) {
+    x = lowerCasing(x);
     moveFront();
+
     while (afterCursor != backDummy) {
         if (afterCursor->elementName == x) {
             return (nameOf());
