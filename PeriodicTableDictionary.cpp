@@ -9,10 +9,10 @@
 #include "PeriodicTableDictionary.h"
 
 PeriodicTable :: periodElement :: periodElement(std::string x, std::string y, int z, float f) {
-    elementSymbol = "";
-    elementName = "";
-    atomicNumber = 0;
-    atomicMass = 0;
+    elementSymbol = x;
+    elementName = y;
+    atomicNumber = z;
+    atomicMass = f;
     next = nullptr;
     prev = nullptr;
 }
