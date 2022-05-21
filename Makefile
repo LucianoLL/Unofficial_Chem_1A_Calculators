@@ -20,4 +20,4 @@ PeriodicTableDictionary.o :  PeriodicTableDictionary.cpp PeriodicTableDictionary
 		$(CPP) $(CPPFLAGS) -c PeriodicTableDictionary.cpp
 
 clean :
-		rm -f MolarMassClient MolarMassClient.o MolarMass.o PeriodicTableDictionary.o
+		rm -f MolarMassClient PeriodicTableClient MolarMassClient.o MolarMass.o PeriodicTableClient.o PeriodicTableDictionary.o
