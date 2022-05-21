@@ -78,8 +78,8 @@ int main () {
     }
 
     int listSize = compoundList.size();
-    std::vector<std::string> copyList;
+    std::vector<std::string> seperatedCompound;
     for (int i = 0; i < listSize; i++) {
-        splitCompound(compoundList[i]);
+        seperatedCompound = splitCompound(compoundList[i]);
     }
 }

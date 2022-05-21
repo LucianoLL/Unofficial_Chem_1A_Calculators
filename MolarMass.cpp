@@ -28,7 +28,6 @@ std::vector<std::string> splitCompound(std::string clientComp) {
                 i++;
                 bufferStr += clientComp[i];
             }
-            std::cout << bufferStr << "\n";
             toReturn.push_back(bufferStr);
         } else if (clientComp[i] == '(') {
             while (clientComp[i] != ')') {
@@ -40,7 +39,6 @@ std::vector<std::string> splitCompound(std::string clientComp) {
                 i++;
                 bufferStr += clientComp[i];
             }
-            std::cout << bufferStr << "\n";
             toReturn.push_back(bufferStr);
         }
     }
