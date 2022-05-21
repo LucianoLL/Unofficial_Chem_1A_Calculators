@@ -1,6 +1,6 @@
 /* Molar Mass client calculator
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022 - 05/11/2022
+ * Develop: 05/11/2022 - 05/21/2022
  */
 
 #include <iostream>
@@ -79,6 +79,6 @@ int main () {
 
     int listSize = compoundList.size();
     for (int i = 0; i < listSize; i++) {
-
+        splitCompound(compoundList[i]);
     }
 }
