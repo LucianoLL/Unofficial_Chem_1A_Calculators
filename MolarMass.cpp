@@ -11,7 +11,7 @@
 #include "MolarMass.h"
 #include "PeriodicTableDictionary.h"
 
-std::vector<std::string> MolarMassCalc :: splitCompound(std::string clientComp) {
+std::vector<std::string> splitCompound(std::string clientComp) {
     std::vector<std::string> toReturn;
     int stirngLen = clientComp.length();
     std::string bufferStr = "";
@@ -47,10 +47,10 @@ std::vector<std::string> MolarMassCalc :: splitCompound(std::string clientComp) 
     return (toReturn);
 }
 
-float MolarMassCalc :: multElement(std::string perElement, int x){
+float multElement(std::string perElement, int x){
 
 }
 
-float MolarMassCalc :: addAllElements(std::vector<int>) {
+float addAllElements(std::vector<int>) {
 
 }
