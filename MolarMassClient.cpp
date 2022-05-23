@@ -11,7 +11,7 @@
 #include "PeriodicTableDictionary.h"
 #include "MolarMass.h"
 
-void initPeriodicTable() {
+int main () {
     PeriodicTable ElementsTable;
     std::ifstream inFile;
     inFile.open("PeriodicTable.txt");
@@ -43,10 +43,6 @@ void initPeriodicTable() {
         }
         ElementsTable.insertElement(tmpSymbol, tmpName, tmpNumber, tmpMass);  //  inseritng our new element into our database
     }
-}
-
-int main () {
-    initPeriodicTable();
 
     int compoundAmounts;  //  what will eventually become a digit
     std::string failSafe;  //  passing argument as a string as a fail safe
