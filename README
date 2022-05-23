@@ -8,15 +8,5 @@ a dictionary of the periodic table to ease in clacualtions and quickly look up e
 The calcualtors assiociated will deal with calculating molar mass, determining limiting reactants,
 and perhaps some stoichiometry and equilibriums.
 
-Instructions:
-To run PeriodicTableClient
-Type:
-"make ./PeriodicTableClient"
-"PeriodicTableClient"
-Follow in-program instructions
-
-To run QuadraticFormula.cpp
-Type:
-"cd .\relevent_formula_calculators\"
-"g++ QuadraticFormula.cpp"
-".\a.exe"
+Note:
+For instructions on how to download and run the programs, please refer to the wiki on this page.
