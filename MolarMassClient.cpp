@@ -82,6 +82,7 @@ int main () {
         for (int i = 0; i < compSize; i++) {
             std::cout << vectBuffer[i] << " ";
         }
+        std::cout << "\n";
         
 
     }
