@@ -77,4 +77,5 @@ int main () {
     std::vector<std::string> seperatedCompound;  //  the vector with the element and digit parsed
     for (int i = 0; i < listSize; i++) {
         std::cout << compoundList[i] << "\n";
+    }
 }
