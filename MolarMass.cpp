@@ -63,6 +63,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
     int i = 0;
     while (!(isdigit(S[i])) && i < eleSize) {  //  as long as we don;t reach the end or hit a numerical digit
         strBuffer += S[i];  //  add it to our string buffer
+        i++;
     }
     toReturn.push_back(strBuffer);  //  pushing our parsed element into our vector
     if (isdigit(S[i])) {  //  checking if our last element is a numerical digit
