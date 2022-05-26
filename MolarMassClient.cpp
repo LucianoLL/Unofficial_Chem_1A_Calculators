@@ -80,7 +80,7 @@ int main () {
         vectBuffer = splitCompound(strBuffer);
         int compSize = vectBuffer.size();
         for (int i = 0; i < compSize; i++) {
-            std::cout << vectBuffer[i] << "\n";
+            std::cout << vectBuffer[i] << " ";
         }
         
 
