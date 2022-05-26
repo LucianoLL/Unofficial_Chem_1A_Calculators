@@ -45,20 +45,20 @@ std::vector<std::string> splitCompound(std::string clientComp) {
     return (toReturn);  //  return the vector
 }
 
-int strSize(std::string S) {  //  to make indexing easier to seperate the numbers
-    int toReturn = 0;
-    while (S[toReturn] != NULL) {
-        toReturn++;
-    }
+// int strSize(std::string S) {  //  to make indexing easier to seperate the numbers
+//     int toReturn = 0;
+//     while (S[toReturn] != NULL) {
+//         toReturn++;
+//     }
 
-    return (toReturn);
+//     return (toReturn);
 
-}
+// }
 
 std::vector<std::string> segComp(std::string S) {  //  to segment the elements from their digits
     std::vector<std::string> toReturn;  //  a vector with the element and numbers parsed into their own vector
     std::string strBuffer = "";
-    int eleSize = strSize(S);
+    int eleSize = S.length();
 
     int i = 0;
     while (!(isdigit(S[i])) && i < eleSize) {  //  as long as we don;t reach the end or hit a numerical digit
