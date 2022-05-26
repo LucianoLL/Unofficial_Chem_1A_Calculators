@@ -1,7 +1,7 @@
 /*
  * Molar Mass Calculator ADT
  * Luciano Loma Lorenzana
- * Develop: 05/21/2022 - 05/21/2022
+ * Develop: 05/21/2022 - 05/26/2022
  */
 
 #include <iostream>
@@ -44,16 +44,6 @@ std::vector<std::string> splitCompound(std::string clientComp) {
     }
     return (toReturn);  //  return the vector
 }
-
-// int strSize(std::string S) {  //  to make indexing easier to seperate the numbers
-//     int toReturn = 0;
-//     while (S[toReturn] != NULL) {
-//         toReturn++;
-//     }
-
-//     return (toReturn);
-
-// }
 
 std::vector<std::string> segComp(std::string S) {  //  to segment the elements from their digits
     std::vector<std::string> toReturn;  //  a vector with the element and numbers parsed into their own vector

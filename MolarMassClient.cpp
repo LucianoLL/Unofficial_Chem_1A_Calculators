@@ -1,6 +1,6 @@
 /* Molar Mass client calculator
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022 - 05/25/2022
+ * Develop: 05/11/2022 - 05/26/2022
  */
 
 #include <iostream>
@@ -77,22 +77,22 @@ int main () {
     std::vector<std::string> vectOne;
     for (int i = 0; i < listSize; i++) {  //  going through the inputs
         vectOne = splitCompound(compoundList[i]);  //  splitting the elements with their appropriate digits 
-        float molarMass = 0;
+        float molarMass = 0;  //  the molar mass for our current compound
 
-        std::vector<std::string> vectTwo;
-        int compSize = vectOne.size();
+        std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
+        int compSize = vectOne.size();  //  to make life easier when iterating through
         for (int i = 0; i < compSize; i++) {
-            vectTwo = segComp(vectOne[i]);
+            vectTwo = segComp(vectOne[i]);  //  splittign our current element from it's digit
             
-            if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {
+            if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
                 std::cout << "Could not find element : " << vectTwo[0] << "\n"
                 << "Program now terminating, try reinitailzing\n";
                 exit(EXIT_FAILURE);
 
-            } else {
+            } else {  //  if found, then we do the necessary arithmetic
                 float atomWeight = ElementsTable.elmentWeight();
                 float atomTimes = std::stof(vectTwo[1]);
-                molarMass += multElement(atomWeight, atomTimes);
+                molarMass += multElement(atomWeight, atomTimes);  //  adding the current elements mass to our molar mass
             }
         }
         std::cout << "Molar Mass of " << compoundList[i] << " is : " << molarMass << "\n";
