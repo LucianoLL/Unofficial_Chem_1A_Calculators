@@ -78,7 +78,7 @@ float ifParenthesis (std::string S) {
 
 }
 
-float multElement(float E, int N) {
+float multElement(float E, float N) {
     
 }
 

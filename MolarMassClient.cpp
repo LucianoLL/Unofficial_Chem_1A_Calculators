@@ -74,15 +74,28 @@ int main () {
     }
 
     int listSize = compoundList.size();  //  to easily parse in through the vector
-    std::vector<std::string> vectBuffer;
+    std::vector<std::string> vectOne;
     for (int i = 0; i < listSize; i++) {  //  going through the inputs
-        std::string strBuffer = compoundList[i];
-        vectBuffer = splitCompound(strBuffer);
-        int compSize = vectBuffer.size();
+        vectOne = splitCompound(compoundList[i]);  //  splitting the elements with their appropriate digits 
+        float molarMass = 0;
+
+        std::vector<std::string> vectTwo;
+        int compSize = vectOne.size();
         for (int i = 0; i < compSize; i++) {
-            std::cout << vectBuffer[i] << " ";
+            vectTwo = segComp(vectOne[i]);
+            
+            if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {
+                std::cout << "Could not find element : " << vectTwo[0] << "\n"
+                << "Program now terminating, try reinitailzing\n";
+                exit(EXIT_FAILURE);
+
+            } else {
+                float atomWeight = ElementsTable.elmentWeight();
+                float atomTimes = std::stof(vectTwo[1]);
+                molarMass += multElement(atomWeight, atomTimes);
+            }
         }
-        std::cout << "\n";
+        std::cout << "Molar Mass of " << vectOne[i] << " is : " << molarMass << "\n";
         
 
     }
