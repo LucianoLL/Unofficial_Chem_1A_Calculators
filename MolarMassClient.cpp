@@ -96,7 +96,7 @@ int main () {
                 molarMass += multElement(atomWeight, atomTimes);
             }
         }
-        std::cout << "Molar Mass of " << vectOne[i] << " is : " << molarMass << "\n";
+        std::cout << "Molar Mass of " << compoundList[i] << " is : " << molarMass << "\n";
         
 
     }
