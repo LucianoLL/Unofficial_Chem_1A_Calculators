@@ -83,6 +83,7 @@ int main () {
         int compSize = vectOne.size();
         for (int i = 0; i < compSize; i++) {
             vectTwo = segComp(vectOne[i]);
+            std::cout << "2nd loop\n";
             
             if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {
                 std::cout << "Could not find element : " << vectTwo[0] << "\n"
