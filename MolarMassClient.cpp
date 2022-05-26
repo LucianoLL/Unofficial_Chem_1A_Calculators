@@ -86,7 +86,7 @@ int main () {
             
             if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
                 std::cout << "Could not find element : " << vectTwo[0] << "\n"
-                << "Program now terminating, try reinitailzing\n";
+                << "Program now terminating, try reinitializing\n";
                 exit(EXIT_FAILURE);
 
             } else {  //  if found, then we do the necessary arithmetic
