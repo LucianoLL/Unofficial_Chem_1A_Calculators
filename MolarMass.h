@@ -1,11 +1,12 @@
 /*
  * Molar Mass header file
  * Luciano Loma Lorenzana
- * Develop: 05/21/2022 - 05/21/2022
+ * Develop: 05/25/2022 - 05/21/2022
  */
 
 #include <iostream>
 #include <string>
+#include "PeriodicTableDictionary.h"
 
 #ifndef MOLAR_MASS_H_
 #define MOLAR_MASS_H_

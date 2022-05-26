@@ -1,6 +1,6 @@
 /* Molar Mass client calculator
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022 - 05/21/2022
+ * Develop: 05/11/2022 - 05/25/2022
  */
 
 #include <iostream>
@@ -74,8 +74,15 @@ int main () {
     }
 
     int listSize = compoundList.size();  //  to easily parse in through the vector
-    std::vector<std::string> seperatedCompound;  //  the vector with the element and digit parsed
-    for (int i = 0; i < listSize; i++) {
-        std::cout << compoundList[i] << "\n";
+    std::vector<std::string> vectBuffer;
+    for (int i = 0; i < listSize; i++) {  //  going through the inputs
+        std::string strBuffer = compoundList[i];
+        vectBuffer = splitCompound(strBuffer);
+        int compSize = vectBuffer.size();
+        for (int i = 0; i < compSize; i++) {
+            std::cout << vectBuffer[i] << "\n";
+        }
+        
+
     }
 }
