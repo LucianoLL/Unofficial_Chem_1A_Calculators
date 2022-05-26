@@ -73,9 +73,8 @@ int main () {
         compoundList.push_back(currCompound);  //  adding them into the vector
     }
 
-    int listSize = compoundList.size();
-    std::vector<std::string> seperatedCompound;
+    int listSize = compoundList.size();  //  to easily parse in through the vector
+    std::vector<std::string> seperatedCompound;  //  the vector with the element and digit parsed
     for (int i = 0; i < listSize; i++) {
-        seperatedCompound = splitCompound(compoundList[i]);
-    }
+        std::cout << compoundList[i] << "\n";
 }

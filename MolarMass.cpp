@@ -56,29 +56,29 @@ int strSize(std::string S) {  //  to make indexing easier to seperate the number
 }
 
 std::vector<std::string> segComp(std::string S) {  //  to segment the elements from their digits
-    std::vector<std::string> toReturn;
+    std::vector<std::string> toReturn;  //  a vector with the element and numbers parsed into their own vector
     std::string strBuffer = "";
     int eleSize = strSize(S);
 
     int i = 0;
-    while (!(isdigit(S[i])) && i < eleSize) {
-        strBuffer += S[i];
+    while (!(isdigit(S[i])) && i < eleSize) {  //  as long as we don;t reach the end or hit a numerical digit
+        strBuffer += S[i];  //  add it to our string buffer
     }
-    toReturn.push_back(strBuffer);
-    if (isdigit(S[i])) {
-        strBuffer = S[i];
-        toReturn.push_back(strBuffer);
+    toReturn.push_back(strBuffer);  //  pushing our parsed element into our vector
+    if (isdigit(S[i])) {  //  checking if our last element is a numerical digit
+        strBuffer = S[i];  //  we make it our string buffer
+        toReturn.push_back(strBuffer);  //  push it as a new element into our vector
     } else {
-        toReturn.push_back("1");
+        toReturn.push_back("1");  //  elese w'll just be multiplying by 1
     }
-    return (toReturn);
+    return (toReturn);  //  return that vector
 }
 
 float ifParenthesis (std::string S) {
 
 }
 
-float multElement(std::string perElement) {
+float multElement(float E, int N) {
     
 }
 
