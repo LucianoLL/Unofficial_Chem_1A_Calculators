@@ -20,13 +20,8 @@ int strSize(std::string S);
 /*** To segment the elements from the digits ***/
 std::vector<std::string> segComp(std::string S);
 
-/*** Even more parsing in case the compounds happen to be in parenthesis ***/
-float ifParenthesis (std::string S);
-
 /*** To get the weight of each element in the compound ***/
 float multElement(float E, float N);
 
-/*** Getting all elements added together ***/
-float addAllElements(std::vector<int>);
 
 #endif

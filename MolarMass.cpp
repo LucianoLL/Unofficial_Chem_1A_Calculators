@@ -47,7 +47,7 @@ std::vector<std::string> splitCompound(std::string clientComp) {
 
 int strSize(std::string S) {  //  to make indexing easier to seperate the numbers
     int toReturn = 0;
-    for (char& C : S) {
+    while (S[toReturn] != NULL) {
         toReturn++;
     }
 
@@ -75,15 +75,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
     return (toReturn);  //  return that vector
 }
 
-float ifParenthesis (std::string S) {
-
-}
-
 float multElement(float E, float N) {
     return (E * N);
     
-}
-
-float addAllElements(std::vector<int>) {
-
 }
