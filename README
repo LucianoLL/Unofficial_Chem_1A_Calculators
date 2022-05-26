@@ -1,12 +1,15 @@
 Chem 1A Calculators
 Luciano Loma Lorenzana
-Develop: 05/11/2022 - 05/20/2022
+Develop: 05/11/2022 - 05/26/2022
 
 Summary:
-Calcualtors that are meant to help in the micro calcualtions assiciated with chemistry, along with
+Calcualtors that are meant to help in the micro calcualtions associated with chemistry, along with
 a dictionary of the periodic table to ease in clacualtions and quickly look up elements.
-The calcualtors assiociated will deal with calculating molar mass, determining limiting reactants,
+The calcualtors associated will deal with calculating molar mass, determining limiting reactants,
 and perhaps some stoichiometry and equilibriums.
+
+UPDATES:
+5/26/2022 - We have the Molar Mass calculator ready for testing, please leave comments in you run to any issues.
 
 Note:
 For instructions on how to download and run the programs, please refer to the wiki on this page.
