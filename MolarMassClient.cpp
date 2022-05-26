@@ -67,7 +67,7 @@ int main () {
 
 
     for (int i = 0; i < compoundAmounts; i++) {
-        std::cout << "Type comound " << i << " of " << compoundAmounts << " : " << "\n";
+        std::cout << "Type comound " << i + 1 << " of " << compoundAmounts << " : " << "\n";
         std::cin >> currCompound;  //  taking in the user's inputs
         std::cout << "\n";
         compoundList.push_back(currCompound);  //  adding them into the vector
