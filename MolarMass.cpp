@@ -79,6 +79,7 @@ float ifParenthesis (std::string S) {
 }
 
 float multElement(float E, float N) {
+    return (E * N);
     
 }
 

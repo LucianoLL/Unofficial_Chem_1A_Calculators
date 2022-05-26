@@ -24,7 +24,7 @@ std::vector<std::string> segComp(std::string S);
 float ifParenthesis (std::string S);
 
 /*** To get the weight of each element in the compound ***/
-float multElement(float E, int N);
+float multElement(float E, float N);
 
 /*** Getting all elements added together ***/
 float addAllElements(std::vector<int>);
