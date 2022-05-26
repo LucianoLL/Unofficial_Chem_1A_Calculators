@@ -82,7 +82,6 @@ int main () {
         std::vector<std::string> vectTwo;
         int compSize = vectOne.size();
         for (int i = 0; i < compSize; i++) {
-            std::cout << "2nd loop\n";
             vectTwo = segComp(vectOne[i]);
             
             if (ElementsTable.findElement(vectTwo[0]) == "Bill Nye") {
