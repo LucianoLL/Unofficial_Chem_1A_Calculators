@@ -1,7 +1,7 @@
 /* 
  * Periodic Table dicitonary header file
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022 - 05/21/2022
+ * Develop: 05/11/2022 - 05/28/2022
  */
 
 #include <iostream>
