@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "PeriodicTableDictionary.h"
 
 #ifndef MOLAR_MASS_H_
