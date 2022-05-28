@@ -14,6 +14,6 @@
 #ifndef INIT_FILE_H_
 #define INIT_FILE_H_
 
-void InitTable(std::ifstream inFile, PeriodicTable Table);
+void InitTable(PeriodicTable Table);
 
 #endif
