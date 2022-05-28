@@ -13,7 +13,7 @@ MolarMass.o : MolarMass.cpp MolarMass.h
 PeriodicTableClient : PeriodicTableClient.o PeriodicTableDictionary.o InitializeFile.o
 		$(CPP) $(CPPFLAGS) -o PeriodicTableClient PeriodicTableClient.o PeriodicTableDictionary.o
 
-PeriodicTableClient.o : PeriodicTableClient.cpp PeriodicTableDictionary.cpp PeriodicTableDictionary.h
+PeriodicTableClient.o : PeriodicTableClient.cpp PeriodicTableDictionary.cpp InitializeFile.cpp
 		$(CPP) $(CPPFLAGS) -c PeriodicTableClient.cpp
 
 PeriodicTableDictionary.o :  PeriodicTableDictionary.cpp PeriodicTableDictionary.h
