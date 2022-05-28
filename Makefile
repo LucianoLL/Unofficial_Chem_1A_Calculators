@@ -1,7 +1,7 @@
 CPP = g++
 CPPFLAGS = -Wall -Wextra -pedantic -std=c++17 -Ofast
 
-InitializeFile.o : InitializeFile.cpp InitializeFile.h PeriodicTableDictionary.cpp PeriodicTableDictionary,h
+InitializeFile.o : InitializeFile.cpp InitializeFile.h PeriodicTableDictionary.cpp PeriodicTableDictionary.h
 		$(cpp) $(CPPFLAGS) -c InitializeFile.cpp
 
 MolarMassClient : MolarMassClient.o MolarMass.o PeriodicTableDictionary.o
