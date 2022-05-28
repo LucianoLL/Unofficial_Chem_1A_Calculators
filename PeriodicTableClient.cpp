@@ -9,14 +9,13 @@
 #include <fstream>
 #include <sstream>
 #include "PeriodicTableDictionary.h"
-#include "InitializeFile.h"
 
 int main() {
     // PeriodicTable ElementsTable;
     PeriodicTable Table;
     // std::ifstream inFile;
     // inFile.open("PeriodicTable.txt");
-    InitTable(Table);
+    Table.InitTable();
 
     // std::string currLine = "";  //  to grab the current line that we're on in the text file
     // ElementsTable.moveFront();  //  moving to the front of our table

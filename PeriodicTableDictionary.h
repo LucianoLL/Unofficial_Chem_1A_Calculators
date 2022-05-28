@@ -64,5 +64,7 @@ class PeriodicTable {
 
     std::string findElement(std::string x);  //  to find the element that the user is looking for
 
+    /*** Inititializing the table ***/
+    void InitTable();
 };
 #endif
