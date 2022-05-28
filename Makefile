@@ -19,7 +19,7 @@ PeriodicTableClient.o : PeriodicTableClient.cpp PeriodicTableDictionary.cpp Init
 PeriodicTableDictionary.o :  PeriodicTableDictionary.cpp PeriodicTableDictionary.h
 		$(CPP) $(CPPFLAGS) -c PeriodicTableDictionary.cpp
 
-InitializeFile.o : InitializeFile.cpp InitializeFile.h
+InitializeFile.o : InitializeFile.cpp InitializeFile.h PeriodicTableDictionary.cpp
 		$(cpp) $(CPPFLAGS) -c InitializeFile.cpp
 
 clean :
