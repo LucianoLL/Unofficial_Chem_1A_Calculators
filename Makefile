@@ -21,4 +21,4 @@ PeriodicTableDictionary.o :  PeriodicTableDictionary.cpp PeriodicTableDictionary
 
 
 clean :
-		rm -f MolarMassClient PeriodicTableClient InitializeFile *.o
+		rm -f MolarMassClient PeriodicTableClient *.o
