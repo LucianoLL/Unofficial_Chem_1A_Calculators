@@ -66,28 +66,29 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
 }
 
 float multElement(std::string currComp, PeriodicTable Table) {
-        float molarMass = 0;  //  the molar mass for our current compound
+    float molarMass = 0;  //  the molar mass for our current compound
+    
+    std::vector<std::string> vectOne;
+    vectOne = splitCompound(currComp);
+
+    std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
+    int compSize = vectOne.size();  //  to make life easier when iterating through
+    
+    for (int j = 0; j < compSize; j++) {
+        std::cout << j << " ";
+        vectTwo = segComp(vectOne[j]);  //  splittign our current element from it's digit
         
-        std::vector<std::string> vectOne;
-        vectOne = splitCompound(currComp);
+        if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
+            std::cout << "Could not find element : " << vectTwo[0] << "\n";
+            exit(EXIT_FAILURE);
 
-        std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
-        int compSize = vectOne.size();  //  to make life easier when iterating through
-        for (int j = 0; j < compSize; j++) {
-            std::cout << j << " ";
-            vectTwo = segComp(vectOne[j]);  //  splittign our current element from it's digit
-            
-            if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
-                std::cout << "Could not find element : " << vectTwo[0] << "\n";
-                exit(EXIT_FAILURE);
-
-            } else {  //  if found, then we do the necessary arithmetic
-                float atomWeight = Table.elmentWeight();
-                float atomTimes = std::stof(vectTwo[1]);
-                molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
-            }
+        } else {  //  if found, then we do the necessary arithmetic
+            float atomWeight = Table.elmentWeight();
+            float atomTimes = std::stof(vectTwo[1]);
+            molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
         }
-        std::cout << molarMass << "\n";
-        return (molarMass);
+    }
+    std::cout << molarMass << "\n";
+    return (molarMass);
     
 }

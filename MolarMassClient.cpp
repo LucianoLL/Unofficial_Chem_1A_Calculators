@@ -19,12 +19,12 @@ int main () {
     bool fcnBool = true;
 
     std::cout << "Welcome to the Molar Mass Calculator\n"
-    << "You can exit anytime by typing the word exit \n"
-    << "Please type any compound : ";
+    << "You can exit anytime by typing the word exit \n";
 
     std::string userOpt = "";
 
     while (fcnBool == true) {
+        std::cout << "Please type any compound : ";
         std::cin >> userComp;
         if (userComp == "exit") {
             fcnBool = false;
