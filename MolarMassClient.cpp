@@ -12,8 +12,8 @@
 #include "MolarMass.h"
 
 int main () {
-    PeriodicTable Table;  //  declaring the table
-    Table.InitTable();  //  initializes/builds the periodic table
+    // PeriodicTable Table;  //  declaring the table
+    // Table.InitTable();  //  initializes/builds the periodic table
 
     std::string userComp = "";
     bool fcnBool = true;
@@ -29,7 +29,7 @@ int main () {
         if (userComp == "exit") {
             fcnBool = false;
         } else {
-            float mass = multElement(userComp, Table);
+            float mass = multElement(userComp);
             std::cout << "The Molar Mass of " << userComp << " is : " << mass << "\n";
         }
         std::cout << "Would you like to try another compound : Yes or No?\n";
