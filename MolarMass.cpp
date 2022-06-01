@@ -92,7 +92,6 @@ float multElement(std::string currComp) {
             molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
         }
     }
-    Table.~PeriodicTable();
     return (molarMass);
     
 }
