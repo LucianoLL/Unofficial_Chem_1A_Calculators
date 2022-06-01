@@ -60,7 +60,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
         strBuffer = S[i];  //  we make it our string buffer
         toReturn.push_back(strBuffer);  //  push it as a new element into our vector
     } else {
-        toReturn.push_back("1");  //  elese w'll just be multiplying by 1
+        toReturn.push_back("1");  //  elese we'll just be multiplying by 1
     }
     return (toReturn);  //  return that vector
 }
@@ -69,16 +69,17 @@ float multElement(std::string currComp, PeriodicTable Table) {
         float molarMass = 0;  //  the molar mass for our current compound
         std::vector<std::string> vectOne;
         vectOne = splitCompound(currComp);
-        
+
         std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
         int compSize = vectOne.size();  //  to make life easier when iterating through
         for (int i = 0; i < compSize; i++) {
+            std::cout << "In helepr fcn \n";
             vectTwo = segComp(vectOne[i]);  //  splittign our current element from it's digit
             
             if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
                 std::cout << "Could not find element : " << vectTwo[0] << "\n"
                 << "Program now terminating, try reinitializing\n";
-                exit(EXIT_FAILURE);
+                return (0);
 
             } else {  //  if found, then we do the necessary arithmetic
                 float atomWeight = Table.elmentWeight();
