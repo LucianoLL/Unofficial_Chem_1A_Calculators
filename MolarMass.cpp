@@ -89,7 +89,7 @@ float multElement(std::string currComp, PeriodicTable Table) {
                 molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
             }
         }
-        std::cout << "\n";
+        std::cout << molarMass << "\n";
         return (molarMass);
     
 }
