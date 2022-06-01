@@ -75,9 +75,9 @@ float multElement(std::string currComp, PeriodicTable Table) {
         std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
         int compSize = vectOne.size();  //  to make life easier when iterating through
         std::cout << compSize << "\n";
-        for (int i = 0; i < compSize; i++) {
-            std::cout << vectOne[i] << " ";
-            vectTwo = segComp(vectOne[i]);  //  splittign our current element from it's digit
+        for (int j = 0; j < compSize; j++) {
+            std::cout << vectOne[j] << " ";
+            vectTwo = segComp(vectOne[j]);  //  splittign our current element from it's digit
             
             if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
                 std::cout << "Could not find element : " << vectTwo[0] << "\n";
