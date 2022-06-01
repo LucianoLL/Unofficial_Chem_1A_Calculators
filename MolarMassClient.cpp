@@ -22,10 +22,10 @@ int main () {
     << "You can exit anytime by typing the word exit \n"
     << "Please type any compound : ";
 
-    std::cin >> userComp;
     std::string userOpt = "";
 
     while (fcnBool == true) {
+        std::cin >> userComp;
         if (userComp == "exit") {
             fcnBool = false;
         } else {
