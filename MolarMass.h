@@ -21,7 +21,7 @@ int strSize(std::string S);
 /*** To segment the elements from the digits ***/
 std::vector<std::string> segComp(std::string S);
 
-/*** To get the weight of each element in the compound ***/
+/*** To calculate the compound's molar mass ***/
 float multElement(std::string currComp);
 
 
