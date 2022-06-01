@@ -11,6 +11,7 @@
 #include "MolarMass.h"
 #include "PeriodicTableDictionary.h"
 
+
 std::vector<std::string> splitCompound(std::string clientComp) {
     std::vector<std::string> toReturn;  //  creating a vector that'll return the parsed compounds
     int stirngLen = clientComp.length();  //  to easily iterate through the string
@@ -68,7 +69,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
 float multElement(std::string currComp) {
     PeriodicTable Table;
     Table.InitTable();
-    
+
     float molarMass = 0;  //  the molar mass for our current compound
     
     std::vector<std::string> vectOne;
@@ -91,6 +92,7 @@ float multElement(std::string currComp) {
             molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
         }
     }
+    Table.~PeriodicTable();
     return (molarMass);
     
 }
