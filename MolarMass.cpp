@@ -78,7 +78,7 @@ float multElement(std::string currComp, PeriodicTable Table) {
             vectTwo = segComp(vectOne[i]);  //  splittign our current element from it's digit
             
             if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
-                std::cout << "Could not find element : " << vectTwo[0] << "\n"
+                std::cout << "Could not find element : " << vectTwo[0] << "\n";
                 return (0);
 
             } else {  //  if found, then we do the necessary arithmetic
