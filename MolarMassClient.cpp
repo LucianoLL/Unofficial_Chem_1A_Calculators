@@ -45,10 +45,8 @@ int main () {
     }
 
     int listSize = compoundList.size();  //  to easily parse in through the vector
-    std::vector<std::string> vectOne;
     for (int i = 0; i < listSize; i++) {  //  going through the inputs
-        vectOne = splitCompound(compoundList[i]);  //  splitting the elements with their appropriate digits 
-        float molarMass = multElement(vectOne, Table);
+        float molarMass = multElement(compoundList[i], Table);
         std::cout << "Molar Mass of " << compoundList[i] << " is : " << molarMass << "\n";
     }
 }

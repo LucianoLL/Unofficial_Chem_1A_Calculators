@@ -22,7 +22,7 @@ int strSize(std::string S);
 std::vector<std::string> segComp(std::string S);
 
 /*** To get the weight of each element in the compound ***/
-float multElement(std::vector<std::string> vect, PeriodicTable Table);
+float multElement(std::string currComp, PeriodicTable Table);
 
 
 #endif
