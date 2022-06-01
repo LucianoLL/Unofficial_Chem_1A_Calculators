@@ -75,7 +75,8 @@ float multElement(std::string currComp, PeriodicTable Table) {
         std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
         int compSize = vectOne.size();  //  to make life easier when iterating through
         std::cout << compSize << "\n";
-        for (int j = 0; j < compSize; j++) {
+        int j = 0;
+        for (; j < compSize; j++) {
             std::cout << j << " ";
             vectTwo = segComp(vectOne[j]);  //  splittign our current element from it's digit
             
