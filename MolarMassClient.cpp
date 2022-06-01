@@ -1,6 +1,6 @@
 /* Molar Mass client calculator
  * Luciano Loma Lorenzana
- * Develop: 05/11/2022 - 05/28/2022
+ * Develop: 05/11/2022 - 06/01/2022
  */
 
 #include <iostream>

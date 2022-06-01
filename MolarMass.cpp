@@ -1,7 +1,7 @@
 /*
  * Molar Mass Calculator ADT
  * Luciano Loma Lorenzana
- * Develop: 05/21/2022 - 05/26/2022
+ * Develop: 05/21/2022 - 06/01/2022
  */
 
 #include <iostream>
