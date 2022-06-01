@@ -66,6 +66,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
 }
 
 float multElement(std::string currComp, PeriodicTable Table) {
+        std::cout << "In helepr fcn \n";
         float molarMass = 0;  //  the molar mass for our current compound
         std::vector<std::string> vectOne;
         vectOne = splitCompound(currComp);
@@ -73,12 +74,11 @@ float multElement(std::string currComp, PeriodicTable Table) {
         std::vector<std::string> vectTwo;  //  a vector that'll hold the element an it's digit
         int compSize = vectOne.size();  //  to make life easier when iterating through
         for (int i = 0; i < compSize; i++) {
-            std::cout << "In helepr fcn \n";
+            std::cout << vectOne[i] << " ";
             vectTwo = segComp(vectOne[i]);  //  splittign our current element from it's digit
             
             if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
                 std::cout << "Could not find element : " << vectTwo[0] << "\n"
-                << "Program now terminating, try reinitializing\n";
                 return (0);
 
             } else {  //  if found, then we do the necessary arithmetic
@@ -87,6 +87,7 @@ float multElement(std::string currComp, PeriodicTable Table) {
                 molarMass += (atomWeight * atomTimes);  //  adding the current elements mass to our molar mass
             }
         }
+        std::cout << "\n";
         return (molarMass);
     
 }
