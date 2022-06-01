@@ -3,6 +3,8 @@ Luciano Loma Lorenzana
 Develop: 05/11/2022 - 05/28/2022
 
 Summary:
+For instructions on how to download and run the programs, please refer to the wiki on this page.
+
 Calcualtors that are meant to help in the micro calculations associated with chemistry, along with
 a dictionary of the periodic table to ease in calculations and quickly look up elements.
 The calculators associated will deal with calculating molar mass, determining limiting reactants,
@@ -12,7 +14,4 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-06/01/2022 - Will be working on the Molar Mass program, make sure to pull any version of this repositry from anytime before the date : 06/01/2022 as to be able to at least use a semi working version of that program.
-
-Note:
-For instructions on how to download and run the programs, please refer to the wiki on this page.
+06/01/2022 - Molar Mass client file is back to a semi up and running state. Will also work on instructions to run the programs on a space outside of the UCSC timeshare for those who do not have access to it.

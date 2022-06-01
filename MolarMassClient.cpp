@@ -31,14 +31,14 @@ int main () {
         } else {
             float mass = multElement(userComp);
             std::cout << "The Molar Mass of " << userComp << " is : " << mass << "\n";
-        }
-        std::cout << "Would you like to try another compound : Yes or No?\n";
-        std::cin >> userOpt;
-        if ((userOpt == "No") || (userOpt == "no") || (userOpt == "exit")) {
-            fcnBool = false;
-        } else {
-            fcnBool = true;
-        }       
+            std::cout << "Would you like to try another compound : Yes or No?\n";
+            std::cin >> userOpt;
+            if ((userOpt == "Yes") || (userOpt == "yes") || (userOpt == "y") || (userOpt == "Y")) {
+                fcnBool = true;
+            } else {
+                fcnBool = false;
+            }  
+        }     
     }
     exit(EXIT_SUCCESS);
 }
