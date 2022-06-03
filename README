@@ -1,6 +1,6 @@
 Chem 1A Calculators
 Luciano Loma Lorenzana
-Develop: 05/11/2022 - 06/01/2022
+Develop: 05/11/2022 - 06/02/2022
 
 Summary:
 For instructions on how to download and run the programs, please refer to the wiki on this page.
@@ -14,4 +14,4 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-06/01/2022 - Molar Mass client file is back to a semi up and running state. Will also work on instructions to run the programs on a space outside of the UCSC timeshare for those who do not have access to it.
+06/02/2022 - Molar Mass client file is being worked on again, this time it is due to deal with a certain edge case. If you want to currently be able to use this program, either don't update the repository or pull a previous version of this repository before this date.

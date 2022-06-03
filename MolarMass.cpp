@@ -11,6 +11,45 @@
 #include "MolarMass.h"
 #include "PeriodicTableDictionary.h"
 
+std::vector<std::string> parenCase(std::string S) {
+    int strSize = S.size();
+    int outNum = 0;  //  initializing the numebr outside of the parenthesis
+
+    if (S[strSize - 1] == ')') {
+        outNum = 1;
+    } else if (!isdigit(S[strSize - 1]){
+        std::cout << "Element outside of parenthesis is not a number \n"
+        << "Terminating program now, reinitialize later \n";
+        exit(EXIT_FAILURE);
+    } else {
+        outNum = std::stoi(S[strSize - 1]);
+        S = S.substr(0, strSize - 1);  //  getting rid of the last element in the string
+        strSize = S.size();  //  creatng anew size
+    }
+
+    std::vector<std::string> toReturn;
+    std::string strBuffer = "";
+    int intBuffer = 0;
+    for (int i = 1; 1 < strSize - 1; i++) {
+        if (std::isupper(S[i])) {
+            strBuffer = S[i];
+            if (std::islower(S[i + 1])) {
+                i++;
+                strBuffer += S[i];
+            }
+            if (isdigit(S[i + 1])) {
+                i++;
+                intBuffer = std::stoi(S[i]);
+                intBuffer *= outNum;
+                strBuffer += std::to_string(intBuffer);
+            }
+            toReturn.push_back(strBuffer);
+
+        }
+    }
+    return (toReturn);
+
+}
 
 std::vector<std::string> splitCompound(std::string clientComp) {
     std::vector<std::string> toReturn;  //  creating a vector that'll return the parsed compounds
@@ -66,9 +105,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
     return (toReturn);  //  return that vector
 }
 
-std::vector<std::string> parenCase(std::string S) {
 
-}
 
 float multElement(std::string currComp) {
     PeriodicTable Table;
