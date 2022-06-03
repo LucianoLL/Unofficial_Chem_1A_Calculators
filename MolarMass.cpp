@@ -1,7 +1,7 @@
 /*
  * Molar Mass Calculator ADT
  * Luciano Loma Lorenzana
- * Develop: 05/21/2022 - 06/01/2022
+ * Develop: 05/21/2022 - 06/02/2022
  */
 
 #include <iostream>
@@ -64,6 +64,10 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
         toReturn.push_back("1");  //  elese we'll just be multiplying by 1
     }
     return (toReturn);  //  return that vector
+}
+
+std::vector<std::string> parenCase(std::string S) {
+
 }
 
 float multElement(std::string currComp) {
