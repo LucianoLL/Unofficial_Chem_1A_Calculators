@@ -17,12 +17,12 @@ std::vector<std::string> parenCase(std::string S) {
 
     if (S[strSize - 1] == ')') {
         outNum = 1;
-    } else if (!isdigit(S[strSize - 1]){
+    } else if (!isdigit(S[strSize - 1])) {
         std::cout << "Element outside of parenthesis is not a number \n"
         << "Terminating program now, reinitialize later \n";
         exit(EXIT_FAILURE);
     } else {
-        outNum = std::stoi(S[strSize - 1]);
+        outNum = (int)(S[strSize - 1]);
         S = S.substr(0, strSize - 1);  //  getting rid of the last element in the string
         strSize = S.size();  //  creatng anew size
     }
@@ -39,7 +39,7 @@ std::vector<std::string> parenCase(std::string S) {
             }
             if (isdigit(S[i + 1])) {
                 i++;
-                intBuffer = std::stoi(S[i]);
+                intBuffer = (int)(S[i]);
                 intBuffer *= outNum;
                 strBuffer += std::to_string(intBuffer);
             }
