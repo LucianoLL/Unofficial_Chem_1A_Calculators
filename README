@@ -14,4 +14,7 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-06/02/2022 - Molar Mass client file is being worked on again, this time it is due to deal with a certain edge case. If you want to currently be able to use this program, either don't update the repository or pull a previous version of this repository before this date.
+07/17/2022 - I have now made insturctions in this pages wiki to run the calculators outside of the 
+UCSC timeshare in case students of other establishments want to utilize them. Keep in mind that the 
+calculators might not work at a 100% since they're meant to run on the UCSC timeshare, but it 
+shouldn't be too much of an issue.
