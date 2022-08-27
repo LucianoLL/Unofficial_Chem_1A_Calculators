@@ -1,7 +1,7 @@
 /*
  * Molar Mass header file
  * Luciano Loma Lorenzana
- * Develop: 05/25/2022 - 06/02/2022
+ * Develop: 05/25/2022 - present
  */
 
 #include <iostream>
