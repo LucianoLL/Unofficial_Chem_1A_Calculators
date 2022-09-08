@@ -14,5 +14,6 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-09/08/2022 - I went back to work on the Molar Mass calculator, really trying to get just a certain 
-edge case to work.
+09/08/2022 - I finally got the MolarMassClient passing all of my own test cases, including the
+edge cases. Mayber later today or tomorrow I'll start working on the moles to particles
+program.
