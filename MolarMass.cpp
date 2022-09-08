@@ -17,6 +17,7 @@ std::string parenCase(std::string parenStr) {
     int outNum = 0;  //  initializing the numebr outside of the parenthesis
 
     parenStr = parenStr.substr(1, strSize - 2);  //  getting rid of the first character
+    std::cout << parenStr << "\n";
     if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (int)(parenStr[strSize - 1]);  //  converting the outer digit into an integer
         parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
@@ -115,7 +116,7 @@ float multElement(std::string currComp) {
     int compSize = vectOne.size();  //  to make life easier when iterating through
 
     for (int j = 0; j < compSize; j++) {
-        std::cout << j << " ";
+        //std::cout << j << " ";
         vectTwo = segComp(vectOne[j]);  //  splittign our current element from it's digit
         
         if (Table.findElement(vectTwo[0]) == "Bill Nye") {  //  searching for the element in our list
