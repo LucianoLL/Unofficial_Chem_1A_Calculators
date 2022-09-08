@@ -18,7 +18,6 @@ std::string parenCase(std::string parenStr) {
 
     parenStr = parenStr.substr(1, strSize - 1);  //  getting rid of the first character
     strSize--;
-    std::cout << parenStr << " " << parenStr[strSize - 1] << "\n";
 
     if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (parenStr[strSize - 1]) - 48;  //  converting the outer digit into an integer
@@ -32,7 +31,6 @@ std::string parenCase(std::string parenStr) {
         exit(EXIT_FAILURE);
     }
 
-    std::cout << outNum << "\n";
     for (int i = 1; i <= outNum;) {  //  duplicating the string onto itslef
         toReturn += parenStr;  //  apending the same string to itself
         i++;
