@@ -21,14 +21,16 @@ std::string parenCase(std::string parenStr) {
     std::cout << parenStr << " " << parenStr[strSize - 1] << "\n";
     if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (int)(parenStr[strSize - 1]);  //  converting the outer digit into an integer
-        parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
+        parenStr = parenStr.substr(0, strSize - 2);  //  creating a substring by eliminating the last element
     } else if (parenStr[strSize - 1] == ')') {  //  in case the last element is actually the end parenthesis
         outNum = 1;  //  for now I'll just make it equal to 1
+        parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
     } else {
         std::cout << "Last element is not an acceptable digit" << "\n";  //  all else, we just terminate the program
         exit(EXIT_FAILURE);
     }
 
+    std::cout << outNum << "\n";
     for (int i = 1; i <= outNum;) {  //  duplicating the string onto itslef
         toReturn += parenStr;  //  apending the same string to itself
         i++;
