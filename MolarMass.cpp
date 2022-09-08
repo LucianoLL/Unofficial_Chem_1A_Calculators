@@ -21,7 +21,6 @@ std::string parenCase(std::string parenStr) {
 
     if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (parenStr[strSize - 1]) - 48;  //  converting the outer digit into an integer
-        std::cout << outNum << "\n";
         parenStr = parenStr.substr(0, strSize - 2);  //  creating a substring by eliminating the last element
     } else if (parenStr[strSize - 1] == ')') {  //  in case the last element is actually the end parenthesis
         outNum = 1;  //  for now I'll just make it equal to 1
