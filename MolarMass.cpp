@@ -12,7 +12,7 @@
 #include "PeriodicTableDictionary.h"
 
 std::string parenCase(std::string parenStr) {
-    int strSize = parenStr.size();
+    int strSize = parenStr.length();
     std::string toReturn = "";  //  to store the completed seperated compounds
     int outNum = 0;  //  initializing the numebr outside of the parenthesis
 
