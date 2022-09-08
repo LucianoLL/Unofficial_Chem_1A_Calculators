@@ -33,6 +33,8 @@ std::string parenCase(std::string parenStr) {
         i++;
     }
 
+    std::cout << toReturn << "\n";
+
     return(toReturn);  //  returnning our new string that's fully distributed
 }
 
