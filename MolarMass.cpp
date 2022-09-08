@@ -16,7 +16,7 @@ std::string parenCase(std::string parenStr) {
     std::string toReturn = "";  //  to store the completed seperated compounds
     int outNum = 0;  //  initializing the numebr outside of the parenthesis
 
-    parenStr = parenStr.substr(1, strSize);  //  getting rid of the first character
+    parenStr = parenStr.substr(1, strSize - 1);  //  getting rid of the first character
     if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (int)(parenStr[strSize -1]);  //  converting the outer digit into an integer
         parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
