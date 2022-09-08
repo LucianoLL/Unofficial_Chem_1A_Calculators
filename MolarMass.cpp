@@ -11,44 +11,28 @@
 #include "MolarMass.h"
 #include "PeriodicTableDictionary.h"
 
-std::vector<std::string> parenCase(std::string S) {
-    int strSize = S.size();
+std::string parenCase(std::string parenStr) {
+    int strSize = parenStr.size();
+    std::string toReturn = "";  //  to store the completed seperated compounds
     int outNum = 0;  //  initializing the numebr outside of the parenthesis
 
-    if (S[strSize - 1] == ')') {
-        outNum = 1;
-    } else if (!isdigit(S[strSize - 1])) {
-        std::cout << "Element outside of parenthesis is not a number \n"
-        << "Terminating program now, reinitialize later \n";
-        exit(EXIT_FAILURE);
+    parenStr = parenStr.substr(1, strSize);  //  getting rid of the first character
+    if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
+        outNum = (int)(parenStr[strSize -1]);  //  converting the outer digit into an integer
+        parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
+    } else if (parenStr[strSize - 1] == ')') {  //  in case the last element is actually the end parenthesis
+        outNum = 1;  //  for now I'll just make it equal to 1
     } else {
-        outNum = (int)(S[strSize - 1]);
-        S = S.substr(0, strSize - 1);  //  getting rid of the last element in the string
-        strSize = S.size();  //  creatng anew size
+        std::cout << "Last element is not an acceptable digit" << "\n";  //  all else, we just terminate the program
+        exit(EXIT_FAILURE);
     }
 
-    std::vector<std::string> toReturn;
-    std::string strBuffer = "";
-    int intBuffer = 0;
-    for (int i = 1; 1 < strSize - 1; i++) {
-        if (std::isupper(S[i])) {
-            strBuffer = S[i];
-            if (std::islower(S[i + 1])) {
-                i++;
-                strBuffer += S[i];
-            }
-            if (isdigit(S[i + 1])) {
-                i++;
-                intBuffer = (int)(S[i]);
-                intBuffer *= outNum;
-                strBuffer += std::to_string(intBuffer);
-            }
-            toReturn.push_back(strBuffer);
-
-        }
+    for (int i = 1; i <= outNum;) {  //  duplicating the string onto itslef
+        toReturn += parenStr;  //  apending the same string to itself
+        i++;
     }
-    return (toReturn);
 
+    return(toReturn);  //  returnning our new string that's fully distributed
 }
 
 std::vector<std::string> splitCompound(std::string clientComp) {
@@ -70,6 +54,9 @@ std::vector<std::string> splitCompound(std::string clientComp) {
             }
             toReturn.push_back(bufferStr);
         } else if (clientComp[i] == '(') {  //  if there are parenthesis then we have a speacial case
+
+            std::vector<std::string> tmpVector;
+            int vectSize = 0;
             while (clientComp[i] != ')') {  // we just grab what's inside the parenthesis and the following digit
                 bufferStr += clientComp[i];
                 i++;
@@ -79,7 +66,15 @@ std::vector<std::string> splitCompound(std::string clientComp) {
                 i++;
                 bufferStr += clientComp[i];
             }
-            toReturn.push_back(bufferStr);  //  adding the new element to our list of elements
+            bufferStr = parenCase(bufferStr);  //  altering our actual buffer string
+            tmpVector = splitCompound(bufferStr);  //  putting our string into a vector
+            vectSize = tmpVector.size();
+
+            for (int i = 0; i < vectSize; i++) {  //  iterating through the vector
+                toReturn.push_back(tmpVector[i]);  //  pushing the strings from the vector into our main vector
+                //  this part is confusing and will attmept to simplify it later
+            }
+            //toReturn.push_back(bufferStr);  //  adding the new element to our list of elements
         }
     }
     return (toReturn);  //  return the vector
@@ -91,7 +86,7 @@ std::vector<std::string> segComp(std::string S) {  //  to segment the elements f
     int eleSize = S.length();
 
     int i = 0;
-    while (!(isdigit(S[i])) && i < eleSize) {  //  as long as we don;t reach the end or hit a numerical digit
+    while (!(isdigit(S[i])) && i < eleSize) {  //  as long as we don't reach the end or hit a numerical digit
         strBuffer += S[i];  //  add it to our string buffer
         i++;
     }

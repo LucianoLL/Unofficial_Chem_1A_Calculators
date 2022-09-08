@@ -12,14 +12,14 @@
 #ifndef MOLAR_MASS_H_
 #define MOLAR_MASS_H_
 
+/*** In case one of the inputs is incased in parenthesis ***/
+std::string parenCase(std::string S);
+
 /*** Parsing the compound ***/
 std::vector<std::string> splitCompound(std::string clientComp);
 
 /*** To get the size of the string beng passed ***/
 int strSize(std::string S);
-
-/*** In case one of the inputs is incased in parenthesis ***/
-std::vector<std::string> parenCase(std::string S);
 
 /*** To segment the elements from the digits ***/
 std::vector<std::string> segComp(std::string S);
