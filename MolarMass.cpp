@@ -17,8 +17,9 @@ std::string parenCase(std::string parenStr) {
     int outNum = 0;  //  initializing the numebr outside of the parenthesis
 
     parenStr = parenStr.substr(1, strSize - 1);  //  getting rid of the first character
-    std::cout << parenStr << " " << parenStr[strSize - 2] << "\n";
-    if (isdigit(parenStr[strSize])) {  //  checking that the last element is in fact a digit
+    strSize--;
+    std::cout << parenStr << " " << parenStr[strSize - 1] << "\n";
+    if (isdigit(parenStr[strSize - 1])) {  //  checking that the last element is in fact a digit
         outNum = (int)(parenStr[strSize - 1]);  //  converting the outer digit into an integer
         parenStr = parenStr.substr(0, strSize - 1);  //  creating a substring by eliminating the last element
     } else if (parenStr[strSize - 1] == ')') {  //  in case the last element is actually the end parenthesis
