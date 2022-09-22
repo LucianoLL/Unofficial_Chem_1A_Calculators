@@ -11,6 +11,10 @@
 #include "MolarMass.h"
 #include "PeriodicTableDictionary.h"
 
+/**
+ * This function was debugged with the help and suggestions of :
+ * Bailey Allott 
+ */
 std::string parenCase(std::string parenStr) {
     int strSize = parenStr.length();
     std::string toReturn = "";  //  to store the completed seperated compounds

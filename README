@@ -14,6 +14,6 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-09/08/2022 - I finally got the MolarMassClient passing all of my own test cases, including the
-edge cases. Mayber later today or tomorrow I'll start working on the moles to particles
-program.
+09/22/2022 - I just creditted Bailey Allott in the MolarMass.cpp file for helping out with the parenCase
+function. With their suggestions, the MolarMassClient is now able to take any chemical compound
+as an input.
