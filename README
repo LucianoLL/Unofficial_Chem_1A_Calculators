@@ -14,6 +14,6 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-09/22/2022 - I just creditted Bailey Allott in the MolarMass.cpp file for helping out with the parenCase
-function. With their suggestions, the MolarMassClient is now able to take any chemical compound
-as an input.
+01/14/2023 - I just compiled the two of the programs (MolarMassClient and PeriodicTableClient)
+and pushed the exectuables into the repository. They're both stored in the 'exectuable_files' 
+folder, you can just download them directly from the GitHub repository, right from  the site.
