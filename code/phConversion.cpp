@@ -10,4 +10,14 @@
 
 #include "phConversion.h"
 
-std::string 
+
+/*** pH = -log(H+), log base of 10 ***/
+std::string pHFromHydrogenIonAmount(std:string hydroIonAmt) {
+	if (!std::isdigit(hydroIonAmt)) {
+		std::cout << "Please enter a valid numerical value. \n";
+	}
+	
+	intAmount = std:stoi(hydroIonAmt)
+
+	
+}
