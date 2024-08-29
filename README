@@ -1,6 +1,6 @@
-Chem 1A Calculators
-Luciano Loma Lorenzana
-Develop: 05/11/2022 - present
+# "Unofficial" Chem 1A Calculators
+## Luciano Loma Lorenzana
+### Develop: 05/11/2022 - present
 
 Summary:
 For instructions on how to download and run the programs, please refer to the wiki on this page.
@@ -14,6 +14,4 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 UPDATES:
-01/14/2023 - I just compiled the two of the programs (MolarMassClient and PeriodicTableClient)
-and pushed the exectuables into the repository. They're both stored in the 'exectuable_files' 
-folder, you can just download them directly from the GitHub repository, right from  the site.
+08/29/2024 - I just
