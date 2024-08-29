@@ -14,4 +14,8 @@ Feedback Form:
 https://forms.gle/BR4GtgqGQVUPmMkv8
 
 ## UPDATES:
-08/29/2024 - I just
+08/29/2024 - I just created file for calculating anything assocaited with pH.
+I haven't started coding anything, I just created the files, but it shoudln't take too
+long to come up with working code and a client.
+At the same time, I also updated the README file to a markdown file than just a 
+simple text file, now there's headers.
