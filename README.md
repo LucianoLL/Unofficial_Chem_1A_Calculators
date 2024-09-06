@@ -18,4 +18,4 @@ https://forms.gle/BR4GtgqGQVUPmMkv8
 I haven't started coding anything, I just created the files, but it shoudln't take too
 long to come up with working code and a client.
 At the same time, I also updated the README file to a markdown file than just a 
-simple text file, now there's headers. 
+simple text file, now there's headers.
