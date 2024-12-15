@@ -11,8 +11,7 @@ The calculators associated will deal with calculating molar mass, determining li
 and perhaps some stoichiometry and equilibriums.
 
 ## UPDATES:
-08/29/2024 - I just created file for calculating anything assocaited with pH.
-I haven't started coding anything, I just created the files, but it shoudln't take too
-long to come up with working code and a client.
-At the same time, I also updated the README file to a markdown file than just a 
-simple text file, now there's headers.
+12/15/2024 - Made this branch to see if a GUI for the
+calculators could be built using Python with the Dash library.
+I'm using Pybind11 as a wrapper, and try to figure out how
+to exchange data between the languages and libraries.
