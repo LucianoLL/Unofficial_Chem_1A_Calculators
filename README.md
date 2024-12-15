@@ -10,9 +10,6 @@ a dictionary of the periodic table to ease in calculations and quickly look up e
 The calculators associated will deal with calculating molar mass, determining limiting reactants,
 and perhaps some stoichiometry and equilibriums.
 
-Feedback Form:
-https://forms.gle/BR4GtgqGQVUPmMkv8
-
 ## UPDATES:
 08/29/2024 - I just created file for calculating anything assocaited with pH.
 I haven't started coding anything, I just created the files, but it shoudln't take too
