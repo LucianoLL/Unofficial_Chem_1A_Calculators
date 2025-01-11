@@ -37,6 +37,7 @@ int main () {
             if ((userOpt == "Yes") || (userOpt == "yes") || (userOpt == "y") || (userOpt == "Y")) {
                 fcnBool = true;
             } else {
+                std::cout << "\nOk, bye then\n\n";
                 fcnBool = false;
             }  
         }     

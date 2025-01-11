@@ -41,7 +41,7 @@ int main() {
                 std::cout << "\n";
                 userAgree = true;
             } else {
-                std::cout << "\nOk, bye then\n";
+                std::cout << "\nOk, bye then\n\n";
                 userAgree = false;
             }
         } else {
