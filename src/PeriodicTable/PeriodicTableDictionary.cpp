@@ -128,11 +128,7 @@ std::string PeriodicTable :: findElement(std::string x) {
 /*** Initializing the periodic Table ***/
 void PeriodicTable :: InitTable() {
     std::ifstream inFile;
-    inFile.open("../src/PeriodicTable.txt");
-
-    if (!inFile.is_open()) {
-        std::cout << "False \n";
-    }
+    inFile.open("PeriodicTable.txt");
 
     std::string currLine = "";  //  to grab the current line that we're on in the text file
     moveFront();  //  moving to the front of our table

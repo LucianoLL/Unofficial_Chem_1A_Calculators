@@ -11,8 +11,7 @@ The calculators associated will deal with calculating molar mass, determining li
 and perhaps some stoichiometry and equilibriums.
 
 ## UPDATES:
-01/11/2025 - I've done some file management, and updated the Makefile to account for the changes.
-At the same time I changed the name of the /code directory to the /src directory. The same 
-"make" commands should work as usual, no need for extra commands or anything like that. Also, 
-currently working on a Docker file to simplify the process of installing and running the 
-calculators.
+01/11/2025 - moved the Makefile and PeriodicTable.txt file outside the /src directory, should make
+compiling the calculators a bit more simple, less navigating through directories. Also added
+the QuadraticFormula.cpp file into the Makefile, that way anyone can run that calculator using
+the Makefile rather than typing a long command to compile.
